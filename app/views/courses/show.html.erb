@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Sections Available for <%= @course.name %></h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Semester</th>
+      <th>Section Number</th>
+      <th>Room Number</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @course.sections.each do |section| %>
+      <tr>
+        <td><%= section.semester %></td>
+        <td><%= section.section_number %></td>
+        <td><%= section.room_number %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>  
+
+<%= render 'form', course: @course %>
+
+<%= link_to 'Back', courses_path %>
