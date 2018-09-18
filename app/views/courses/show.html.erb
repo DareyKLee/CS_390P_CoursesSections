@@ -1,24 +1,25 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Name:</strong>
-  <%= @course.name %>
-</p>
+<h1>Sections Available for <%= @course.name %></h1>
 
-<p>
-  <strong>Department:</strong>
-  <%= @course.department %>
-</p>
+<table>
+  <thead>
+    <tr>
+      <th>Semester</th>
+      <th>Section Number</th>
+      <th>Room Number</th>
+    </tr>
+  </thead>
 
-<p>
-  <strong>Course number:</strong>
-  <%= @course.course_number %>
-</p>
+  <tbody>
+    <% @course.sections.each do |section| %>
+      <tr>
+        <td><%= section.semester %></td>
+        <td><%= section.section_number %></td>
+        <td><%= section.room_number %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>  
 
-<p>
-  <strong>Credit hours:</strong>
-  <%= @course.credit_hours %>
-</p>
-
-<%= link_to 'Edit', edit_course_path(@course) %> |
 <%= link_to 'Back', courses_path %>
