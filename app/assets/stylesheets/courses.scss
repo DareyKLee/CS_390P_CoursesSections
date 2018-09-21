@@ -4,7 +4,7 @@
 
 table {
   border-collapse: seperate;
-  border-spacing: 15px;
+  border-spacing: 20px;
 }
 
 thead { 
@@ -19,6 +19,11 @@ tbody {
 }
 
 h1 {
+  margin: auto;
+  width: 225px;
+  border: 5px solid powderblue;
+  border-radius: 10px;
+  padding: 20px;
   font-family: verdana;
   font-size: 50px;
   color: #364FB5;
