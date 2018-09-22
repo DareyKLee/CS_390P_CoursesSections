@@ -1,3 +1,35 @@
 // Place all the styles related to the Courses controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+table {
+  border-collapse: seperate;
+  border-spacing: 20px;
+}
+
+thead { 
+  color: #E53636;
+  text-align: center;
+  font-size: 15px ;
+}
+
+body {
+  background-color: coral;
+}
+
+tbody {
+  color: #364FB5;
+  text-align: center;
+}
+
+h1 {
+  line-height: 1.1;
+  margin: auto;
+  border: 5px solid powderblue;
+  border-radius: 10px;
+  padding: 10px;
+  font-family: verdana;
+  font-size: 30px;
+  color: #364FB5;
+  text-align: center;
+}
